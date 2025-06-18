@@ -1,0 +1,12 @@
+.appLayoutWrap{
+    background-color: black;
+}
+
+.logoImg {
+    width: 120px;
+    height: 35px;
+}
+
+.searchIcon:hover{
+    color: "#fafafa"
+}
