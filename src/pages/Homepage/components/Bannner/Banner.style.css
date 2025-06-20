@@ -3,6 +3,7 @@
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 2%;
 }
 
 .bannerImg:before {
@@ -12,6 +13,7 @@
     left: 0;
     height: 58vh;
     width: 100%;
+    margin-bottom: 2%;
 }
 
 .bannerTextArea {

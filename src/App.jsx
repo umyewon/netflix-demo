@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import './App.css'
+import './Font.css'
 import { Routes, Route } from 'react-router-dom'
 
 // 페이지 주입

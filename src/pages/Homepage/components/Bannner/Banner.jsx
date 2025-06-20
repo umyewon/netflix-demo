@@ -5,7 +5,7 @@ import './Banner.style.css'
 const Banner = () => {
     const { data, isLoading, isError, error } = usePopularMoviesQuery();
     console.log('ddd', data);
-    
+
     if(isLoading){
         return <h1>Loading...</h1>
     }
@@ -16,7 +16,7 @@ const Banner = () => {
     <div 
         style={{backgroundImage : 'url(' + `https://media.themoviedb.org/t/p/w1066_and_h600_bestv2${data?.results[0].poster_path}` + ')'}}
      className="bannerImg">
-        <div className="bannerTextArea">
+        <div className="bannerTextArea" style={{fontFamily : "Merriweather"}}>
             <h1>{data?.results[0].title}</h1>
             <br/>
             <p>{data?.results[0].overview}</p>

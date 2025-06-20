@@ -6,9 +6,9 @@ const MovieCard = ({movie}) => {
     <div style={{backgroundImage : 'url('+`https://media.themoviedb.org/t/p/w600_and_h900_bestv2${movie?.poster_path}`+')'}} className="movieCard">
         <div className='overlay'>
             <h2>{movie.title}</h2>
-            {movie.genre_ids.map((id)=>
-                <Badge bg="danger">${id}</Badge>
-            )}
+            {movie.genre_ids.map((id)=>{
+                return <Badge bg="danger">${id}</Badge>
+            })}
         </div>
         <div>
             <div>{movie.vote_average}</div>

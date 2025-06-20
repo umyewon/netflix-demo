@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 import './AppLayout.style.css'
-import logoLong from '../img/netflixLogoLong.png'
+import logoLong from '../img/neoflixLogoLong.png'
 
 const AppLayout = () => {
   return (
