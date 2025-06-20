@@ -1,12 +1,11 @@
-import React from 'react'
 import {usePopularMoviesQuery} from '../../../../hooks/usePopularMovies'
 import Alert from 'react-bootstrap/Alert';
 import './Banner.style.css'
 
 const Banner = () => {
-    const { data, isLoading, isError, error, refetch } = usePopularMoviesQuery();
+    const { data, isLoading, isError, error } = usePopularMoviesQuery();
     console.log('ddd', data);
-
+    
     if(isLoading){
         return <h1>Loading...</h1>
     }
@@ -15,8 +14,14 @@ const Banner = () => {
     }
   return (
     <div 
-        style={{backgroundImage : 'url(' + `https://media.themoviedb.org/t/p/w1066_and_h600_bestv2${data.results[0].poster_path}` + ')'}}
-     className="bannerImg">Banner</div>
+        style={{backgroundImage : 'url(' + `https://media.themoviedb.org/t/p/w1066_and_h600_bestv2${data?.results[0].poster_path}` + ')'}}
+     className="bannerImg">
+        <div className="bannerTextArea">
+            <h1>{data?.results[0].title}</h1>
+            <br/>
+            <p>{data?.results[0].overview}</p>
+        </div>
+    </div>
   )
 }
 

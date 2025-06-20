@@ -1,13 +1,29 @@
 .bannerImg {
-    height: 56vh;
-    background-position: center;
+    height: 58vh;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.bannerImg:before{
+.bannerImg:before {
     content : '';
     background: linear-gradient(to top, black, transparent);
     position: absolute;
     left: 0;
-    height: 56vh;
+    height: 58vh;
     width: 100%;
+}
+
+.bannerTextArea {
+    width : 36%;
+    display: flex;
+    flex-direction: column;    
+    justify-content: flex-end;
+    height: 100%;
+    padding : 2rem;
+    color: rgb(214 214 214);
+}
+
+.bannerTextArea > *{
+    z-index: 2;
 }

@@ -13,18 +13,18 @@ import logoLong from '../img/netflixLogoLong.png'
 const AppLayout = () => {
   return (
     <div>
-      <Navbar expand="lg" className="bg-body-tertiary" bg="dark" data-bs-theme="dark">
+      <Navbar expand="lg">
         <Container fluid>
           <Navbar.Brand href="#"><img className="logoImg" src={logoLong}/></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: '100px' }}
+              style={{ maxHeight: '100px'}}
               navbarScroll
               >
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/movies">Movies</Nav.Link>
+              <Nav.Link href="/" className='text-white'>Home</Nav.Link>
+              <Nav.Link href="/movies" className='text-white'>Movies</Nav.Link>
             </Nav>
             <Form className="d-flex">
               <Form.Control
